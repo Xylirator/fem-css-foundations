@@ -1,10 +1,12 @@
+@import "./base.css";
+
 body {
-    background-color: #ff7b54;
-    color: #ffff;
-    font-family: 'Inter', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-on-text-primary);
+  font-family: var(--font-family);
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
