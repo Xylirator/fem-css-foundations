@@ -2,12 +2,21 @@
   --color-primary: #ff7b54;
   --color-on-text-primary: #ffffff;
   --font-family: "Inter", sans-serif;
+  --color-button-border: var(--color-on-text-primary);
+  --color-button-primary-bg: var(--color-on-text-primary);
+  --color-button-primary-text: var(--color-primary);
+  --color-button-secondary-bg: var(--color-primary);
+  --color-button-secondary-text: var(--color-on-text-primary);
 }
 
 body {
   background-color: var(--color-primary);
   color: var(--color-on-text-primary);
   font-family: var(--font-family);
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -58,4 +67,42 @@ header img {
 .nav__list-item {
   margin-inline-end: 36px;
   font-size: 20px;
+}
+
+.button {
+  font-size: 32px;
+  padding: 0 64px;
+  height: 100px;
+  border: 4px solid var(--color-button-border);
+  cursor: pointer;
+  transition: outline 0.2s linear;
+}
+
+
+
+.button:hover,
+.button:focus {
+  outline: 2px solid var(--color-on-text-primary)
+}
+
+.button--primary {
+  background-color: var(--color-button-primary-bg);
+  color: var(--color-button-primary-text)
+}
+
+.button--secondary {
+background-color: var(--color-button-secondary-bg);
+color: var(--color-button-secondary-text);
+}
+
+.button-container {
+  display: flex;
+}
+
+.button:not(button:last-of-type) {
+  margin-inline-end: 20px;
+}
+
+.button__icon {
+  vertical-align: middle;
 }

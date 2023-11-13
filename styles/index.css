@@ -1,12 +1,15 @@
 @import "./base.css";
 
-body {
-  background-color: var(--color-primary);
-  color: var(--color-on-text-primary);
-  font-family: var(--font-family);
+.main {
+  padding: 150px;
 }
 
-a {
-  color: inherit;
-  text-decoration: inherit;
+
+.main__heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.main__sub-heading {
+  font-size: 40px;
 }
